@@ -6,6 +6,40 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="default.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+			BODY {
+			 background-color:    /* ide add meg a háttérszínt */
+			 }
+
+			H3 {
+			 font-family: verdana, arial, helvetia, sans serif;
+			 font-size: 25px;
+			 font-weight: bold;
+			 text-align: center;
+			 color: #0000ff;
+			 }
+			TD {
+			 font-family: verdana;       /* szöveg betütipusa */
+			 font-size: 12px;            /* szöveg betümérete */
+			 color: #000000;               /* szöveg szine */
+			 }
+			INPUT.a, TEXTAREA {
+			 background-color: #eaeaea;  /* beiró mezök háttérszine */
+			 font-family: courier;       /* beirómezök betütipusa */
+			 font-size: 18px;            /* beirómezök betümérete */
+			 color: #000000;             /* beirómezök betüszine */
+			 }
+			INPUT.button {
+			 background-color: #9dff9d;  /* gombok szine */
+			 font-family: verdana;       /* gomb szöveg betütipusa */
+			 font-size: 12px;            /* gomb szöveg mérete */
+			 font-weight: bold;          /* gomb szöveg vastagsága; normal, bold=vastag */
+			 width: 100;                 /* gombok szélessége */
+			 color: #000000;             /* gomb szöveg szine */
+			 }
+
+			</style>
 </head>
 <body>
      <div id="header">
@@ -17,25 +51,45 @@
 		   <div class="post">
 			<h2 class="title"> </h2>
 			<div class="story">
-			 <h2>Üdvözöljük Honlapunkon! </h2><br> 
- <br><br><br><br>
-
-<!-- <h2 style="color:red;"align=center>Tisztelt Tulajdonosok! </h2>
-			<h1 style="color:red;"align=left> A honlapon keresztül a levelezés és a vízóraleadási rendszer nem mûködik, ezért kérjük önöket,
-			hogy a társasház email címére legyenek szívesek elküldeni a vízmérõállásokat és a hozzátartozó gyártási számokat vagy papíralapon leadni a közös képviselõi postaládába. </h1>
-
-			<h1 style="color:red;"align=center> A társasház email címe:<span style="color: #0000a0"> obuda23@gmail.com </span></h1> -->
-<br>
-<br>
-<br>
+			<h2>Levélküldés</h2>
 
 
+			<h2 style="color:red;"align=center>Tisztelt Tulajdonosok! </h2>
+			<h1 style="color:red;"align=left> A honlapon keresztül a levelezés és a vízóraleadási rendszer nem mûködik, ezért kérjük önöket,hogy a társasház email címére küldjék leveleiket. </h1>
+
+			<h1 style="color:red;"align=center> A társasház email címe:<span style="color: #0000a0"> obuda23@gmail.com </span>
+
+			<!--
+ <br><br><form method="post" action="mail.php"> 
+		<table align="center"> 
+		  <tr>
+			<td>Neve: <small>(feladó)</small><br><input type="text" name="neved" size=27 maxLength=40 class="a"></td>
+		  </tr>
+		  <tr>
+			<td>Az Ön E-mail címe: <small>(feladó)</small><br><input type="text" name="email" size=27 maxLength=40 class="a"></td>
+		  </tr>
+		  <tr>
+			<td>Az üzenet szövege:<br><textarea cols=45 rows=12 name="szoveg"></textarea></td>
+		  </tr>
+		   <tr>
+			<td align="center">
+			   <input type="submit" value="Küldés" class="button">	
+			     
+			</td>
+		  </tr>
+		</table>
+     </form>
+	 <p align=center> 
+	 Az ide írt üzenete az <font size="2" color="#ff0000">obuda23@gmail.com </font>címre érkezik</p> 
+	 -->
+	 <br> <br><br>
+
+<p align=center>
+<img width=125 height=125 src="tg_5.gif">
 
 
-               <p align="center"><img width=520 height=320 src="elso.JPG">
-			</div><br><br><br>
- A Tiszta, virágos otthonunk Óbuda-Békásmegyer pályázaton, második díjat nyertünk<br>
- <p align="center"><a href= "vir2020.pdf" target="fooldal" ><b><i>Oklevél megtekintése</i></b></a><br><br>
+			</div>
+ 
 		</div>
     		<div class="post">
 			<h2 class="title"> </h2>
@@ -45,6 +99,7 @@
 			</div> 
  
 		</div>
+		
 	</div>
 	<div id="colTwo">
 		<ul>		
@@ -54,7 +109,7 @@
                    <li><a href="fogad.html">Fogadó óra</a></li>
                    <li><a href="alapszabaly.html">Alapszabály</a></li>
                    <li><a href="hazi.html">Házirend</a></li>
-                   <li><a href="tuzved23.pdf" target="fooldal">Tûzvédelmi Házirend</a></li>                         
+                   <li><a href="tuzved23.pdf" target="fooldal">Tûzvédelmi Házirend</a></li> 
                    <li><a href="hataroz.html">Határozatok</a></li>
                    <li><a href="kozosk_2013.html">Közös költség</a></li>     
                    <li><a href="szovazonos.html">Szövetkezet azonosítói</a></li>
@@ -68,6 +123,7 @@
                    <li><a href="email.html">Levélküldés</a></li>
                    <li><a href="adatv23.html">Adatvédelmi tájékoztató</a></li>
                    <li><a href="adatszab23.html">Adatvédelmi szabályzat</a></li>
+
 				</ul>
  			</li>	
 		</ul><br>

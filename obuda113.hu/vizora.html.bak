@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
-<title>Óbuda23</title>
+<title>Óbuda113</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="default.css" rel="stylesheet" type="text/css" />
@@ -102,8 +102,8 @@
 </head>
 <body>
      <div id="header">
-<h1> Óbuda 23 sz. Lakásfenntartó Szövetkezet  
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Budapest, 1036 Lajos utca 113 - 121</h1>
+<h1> Óbuda 113. sz. Társasház <br>   
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Budapest, 1036 Pacsirtamező utca 45-47</h1>
      </div>
      <div id="content">
 	    <div id="colOne">
@@ -112,18 +112,21 @@
 			<div class="story">
 			<h2>Vízóra állás leadás</h2>
 
-<!-- <h2 style="color:red;"align=center>Tisztelt Tulajdonosok! </h2>
-			<h1 style="color:red;"align=left> A honlapon keresztül a levelezés és a vízóraleadási rendszer nem működik, 
-			ezért kérjük önöket, hogy a társasház email címére legyenek szívesek elküldeni a vízmérőállásokat és a hozzátartozó gyártási számokat vagy papíralapon leadni a közös képviselői postaládába. </h1>
+<!--<h2>Üdvözöljük Honlapunkon</h2> --><br><br><br>
 
-			<h1 style="color:red;"align=center> A társasház email címe:<span style="color: #0000a0"> obuda23@gmail.com </span></h1> -->
+			<h2 style="color:red;"align=center>Tisztelt Tulajdonosok! </h2>
+			<h1 style="color:red;"align=left> A honlapon keresztül a levelezés és a vízóraleadási rendszer nem működik, ezért kérjük önöket,
+			hogy a társasház email címére legyenek szívesek elküldeni a vízmérőállásokat és a hozzátartozó gyártási számokat vagy papíralapon leadni a közös képviselői postaládába. </h1>
+
+			<h1 style="color:red;"align=center> A társasház email címe:<span style="color: #0000a0">  obudatarsas113@gmail.com </span></h1>
+
+
 <br>
 <br>
 <br>
 
 
-
-
+<!--
 
   <br>   <form method="post" action="mail1.php" onSubmit="return ellenoriz()">
   
@@ -135,13 +138,11 @@
 	    <td>E-mail címe: </td><td><INPUT type="text" name="email" size=27 maxLength=40 class="a"></TD>
      </tr>
      <tr>
- 	    <td>Lajos utca: <small>(házszám)</small></td><td> 
+ 	    <td>Pacsírtamező utca: <small>(házszám)</small></td><td> 
 		              <select name="haz">
-                                <option>113</option>
-                                <option>115</option>
-                                <option>117</option>
-                                <option>119</option>
-                                <option>121</option>
+                                <option>45</option>
+                                <option>47</option>
+
 			      </select> </td>
      </tr>
      <tr>
@@ -251,10 +252,10 @@
 	    <td align="center">  
 		    <input type="submit" value="küldés" class="button"></td> 
 		     
-	  
+	   
   </tr>
 </table>
-
+-->
 <br><br>
     <p align="center">
   <img width=150 height=130 src="vizvez2.jpg"><br>
@@ -269,29 +270,33 @@
 			</div> 
  
 		</div>
+
+		
 	</div>
 	<div id="colTwo">
 		<ul>		
 			<li>
 				<h2>Menű</h2>
 				<ul>
-                   <li><a href="fogad.html">Fogadó óra</a></li>
-                   <li><a href="alapszabaly.html">Alapszabály</a></li>
-                   <li><a href="hazi.html">Házirend</a></li>
-                   <li><a href="tuzved23.pdf" target="fooldal">Tűzvédelmi Házirend</a></li>                         
-                   <li><a href="hataroz.html">Határozatok</a></li>
-                   <li><a href="kozosk_2013.html">Közös költség</a></li>     
-                   <li><a href="szovazonos.html">Szövetkezet azonosítói</a></li>
-                   <li><a href="biztos.html">Házbiztosítás</a></li>
-                   <li><a href="szolgaz.html">Szolgáltató azonosítok</a></li>       
-                   <
-                   <li><a href="valalkoz.html">Szakiparosok</a></li>
-                   <li><a href="onkorm.html">Önkormányzat elérhetősége</a></li>
-                   <li><a href="koztel.html">Szolgáltatók</a></li>
-                   <li><a href="vizora.html">Vízóra állás leadás</a></li>
-                   <li><a href="email.html">Levélküldés</a></li>
-                   <li><a href="adatv23.html">Adatvédelmi tájékoztató</a></li>
-                   <li><a href="adatszab23.html">Adatvédelmi szabályzat</a></li>
+        <li><a href="fogado.html">Elérhetőség</a></li>
+        <li><a href="szmsz.html" >SZMSZ</a></li>
+        <li><a href="alapit.html" >Alapító okirat</a></li>        
+        <li><a href="tv_internet.html" >TV, telefon, internet</a></li>
+        <li><a href="email1.html" >Levelezés</a></li>
+        <li><a href="biztosit.html" >Házbiztosítás</a></li>
+        <li><a href="azonosit.html" >Szolgáltató azonosító</a></li>
+        <li><a href="szolg.html" >Szolgáltatók</a></li>
+        <li><a href="tuzved113.pdf" target="fooldal">Tűzvédelmi Házirend</a></li>
+        <li><a href="hazirend.html">Házirend</a></li>
+        
+        <li><a href="iparosok.html">Szakiparosok</a></li>
+        <li><a href="fizkkolts.html">Közös költség</a></li>
+        <li><a href="onkorm.html">Önkormányzat elérhetősége</a></li>
+        <li><a href="hataroz.html">Határozatok</a></li>
+        <li><a href="vizora.html">Vízóra állás leadás</a></li>
+        <li><a href="ttorveny2011.html">Társasházi törvény</a></li>    
+		<li><a href="adatv113.html">Adatvédelmi tájékoztató</a></li>
+        <li><a href="adatszab113.html">Adatvédelmi szabályzat</a></li>
 
 				</ul>
  			</li>	

@@ -112,18 +112,18 @@
 			<div class="story">
 			<h2>Vízóra állás leadás</h2>
 
-<!-- <h2 style="color:red;"align=center>Tisztelt Tulajdonosok! </h2>
+<h2 style="color:red;"align=center>Tisztelt Tulajdonosok! </h2>
 			<h1 style="color:red;"align=left> A honlapon keresztül a levelezés és a vízóraleadási rendszer nem mûködik, 
 			ezért kérjük önöket, hogy a társasház email címére legyenek szívesek elküldeni a vízmérõállásokat és a hozzátartozó gyártási számokat vagy papíralapon leadni a közös képviselõi postaládába. </h1>
 
-			<h1 style="color:red;"align=center> A társasház email címe:<span style="color: #0000a0"> obuda23@gmail.com </span></h1> -->
+			<h1 style="color:red;"align=center> A társasház email címe:<span style="color: #0000a0"> obuda23@gmail.com </span></h1>
 <br>
 <br>
 <br>
 
 
 
-
+<!--
 
   <br>   <form method="post" action="mail1.php" onSubmit="return ellenoriz()">
   
@@ -254,7 +254,7 @@
 	  
   </tr>
 </table>
-
+-->
 <br><br>
     <p align="center">
   <img width=150 height=130 src="vizvez2.jpg"><br>
