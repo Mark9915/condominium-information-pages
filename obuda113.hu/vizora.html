@@ -40,6 +40,9 @@
 		 width: 100;                 /* gombok szélessége */
 		 color: #000000;               /* gomb szöveg szine */
 		 }
+		 INPUT:invalid {
+		 border: 3px solid red;
+		 }
 		-->
 		</style>
 <script language="javascript">
@@ -71,7 +74,7 @@
 					alert(error_ajto);
 					document.urlap.ajto.focus();
 					return false;
-					} 
+					}
 
 				if (document.urlap.gyhideg.value=='') {
 					alert(error_gyhideg);
@@ -98,11 +101,17 @@
 					}
 			}
 			//-->
-			</script>
+</script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	 <script>
+	   function onSubmit(token) {
+             document.getElementById("i-recaptcha").submit();
+	   }
+	 </script>
 </head>
 <body>
      <div id="header">
-<h1> Óbuda 113. sz. Társasház <br>   
+<h1> Óbuda 113. sz. Társasház <br>
                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Budapest, 1036 Pacsirtamezõ utca 45-47</h1>
      </div>
      <div id="content">
@@ -112,33 +121,20 @@
 			<div class="story">
 			<h2>Vízóra állás leadás</h2>
 
-<!--<h2>Üdvözöljük Honlapunkon</h2> --><br><br><br>
-
-			<h2 style="color:red;"align=center>Tisztelt Tulajdonosok! </h2>
-			<h1 style="color:red;"align=left> A honlapon keresztül a levelezés és a vízóraleadási rendszer nem mûködik, ezért kérjük önöket,
-			hogy a társasház email címére legyenek szívesek elküldeni a vízmérõállásokat és a hozzátartozó gyártási számokat vagy papíralapon leadni a közös képviselõi postaládába. </h1>
-
-			<h1 style="color:red;"align=center> A társasház email címe:<span style="color: #0000a0">  obudatarsas113@gmail.com </span></h1>
+<h2>Üdvözöljük Honlapunkon</h2>
 
 
-<br>
-<br>
-<br>
+  <br>   <form id='i-recaptcha' method="post" action="mail1.php" onSubmit="return ellenoriz()">
 
-
-<!--
-
-  <br>   <form method="post" action="mail1.php" onSubmit="return ellenoriz()">
-  
   <table align="center" border=0 cellspacing=0 width="100%" height="25%">
      <tr>
-	    <td>Tulajdonos neve:</td><td> <INPUT type="text" name="neved" size=27 maxLength=40 class="a"></td>
+	    <td>Tulajdonos neve:</td><td> <INPUT type="text" pattern="^([\w\s\.\-äÄáÁéÉíÍóÓöÖõÕúÚüÜûÛ0-90!#\$%&'\*\+\/=\?\^_`\{\|\}~@]){1,40}$$" name="neved" size=27 maxLength=40 class="a"></td>
      </tr>
      <tr>
-	    <td>E-mail címe: </td><td><INPUT type="text" name="email" size=27 maxLength=40 class="a"></TD>
+	    <td>E-mail címe: </td><td><INPUT type="text" pattern="^([\w\s\.\-äÄáÁéÉíÍóÓöÖõÕúÚüÜûÛ0-90!#\$%&'\*\+\/=\?\^_`\{\|\}~@]){1,40}$" name="email" size=27 maxLength=40 class="a"></TD>
      </tr>
      <tr>
- 	    <td>Pacsírtamezõ utca: <small>(házszám)</small></td><td> 
+ 	    <td>Pacsirtamezõ utca: <small>(házszám)</small></td><td>
 		              <select name="haz">
                                 <option>45</option>
                                 <option>47</option>
@@ -160,8 +156,8 @@
                         <option>10</option>
                       </select>
         </td>
-      </tr>      	 
-     <tr>  
+      </tr>
+     <tr>
 
          <td>Ajtó: </td><td>
         	     <select name="ajto">
@@ -226,61 +222,60 @@
                         <option>59</option>
                         <option>60</option>
                       </select>
-     </tr>    
+     </tr>
   <tr>
   </tr>
     <tr>
-	    <td><font   color="#0000ff">Hidegvíz óra gyári száma: </td><td> <input type="text" name="gyhideg" size=12 maxLength=10 class="a"></td>
+	    <td><font   color="#0000ff">Hidegvíz óra gyári száma: </td><td> <input type="text" pattern="^[\w0-9]{1,20}$" name="gyhideg" size=12 maxLength=10 class="a"></td>
   </tr>
   <tr>
-	    <td><font   color="#0000ff">Hidegvíz óra állás:<small>(m3)</small></td><td> <input type="text" name="hideg" size=4 maxLength=10 class="a"></td>
+	    <td><font   color="#0000ff">Hidegvíz óra állás:<small>(m3)</small></td><td> <input type="text" pattern="^[0-9]{1,20}$" name="hideg" size=4 maxLength=10 class="a"></td>
   </tr>
   <tr>
-	    <td><font  color="#ff0000">Melegvíz óra gyári száma:</td><td> <input type="text" name="gymeleg" size=12 maxLength=10 class="a"></td>
+	    <td><font  color="#ff0000">Melegvíz óra gyári száma:</td><td> <input type="text" pattern="^[\w0-9]{1,20}$" name="gymeleg" size=12 maxLength=10 class="a"></td>
   </tr>
   <tr>
-	    <td><font color="#ff0000">Melegvíz óra állás:<small>(m3)</small></td><td> <input type="text" name="meleg" size=4 maxLength=10 class="a"></td>
+	    <td><font color="#ff0000">Melegvíz óra állás:<small>(m3)</small></td><td> <input type="text" pattern="^[0-9]{1,20}$" name="meleg" size=4 maxLength=10 class="a"></td>
   </tr>
-  <tr> 
-	   
-  </tr><BR> 
+  <tr>
+
+  </tr><BR>
   <tr>
       <td width="50%" align=left   valign=top><font face=arial color=red   size="2"><b>&nbsp;</td>
   </tr>
   <tr>
   <td></td>
-	    <td align="center">  
-		    <input type="submit" value="küldés" class="button"></td> 
-		     
-	   
+	    <td align="center">
+		    <input type="submit" value="küldés" class="g-recaptcha" data-sitekey="6LfTtPAlAAAAAL6eU9p3RU0OmCMfD-PEDQmcs7z3" data-callback="onSubmit"></td>
+
+
   </tr>
 </table>
--->
 <br><br>
     <p align="center">
   <img width=150 height=130 src="vizvez2.jpg"><br>
 			</div>
- 
+
 		</div>
     		<div class="post">
 			<h2 class="title"> </h2>
-			 
+
 			<div class="story">
- 
-			</div> 
- 
+
+			</div>
+
 		</div>
 
-		
+
 	</div>
 	<div id="colTwo">
-		<ul>		
+		<ul>
 			<li>
-				<h2>Menû</h2>
+				<h2>Menü</h2>
 				<ul>
         <li><a href="fogado.html">Elérhetõség</a></li>
         <li><a href="szmsz.html" >SZMSZ</a></li>
-        <li><a href="alapit.html" >Alapító okirat</a></li>        
+        <li><a href="alapit.html" >Alapító okirat</a></li>
         <li><a href="tv_internet.html" >TV, telefon, internet</a></li>
         <li><a href="email1.html" >Levelezés</a></li>
         <li><a href="biztosit.html" >Házbiztosítás</a></li>
@@ -288,20 +283,20 @@
         <li><a href="szolg.html" >Szolgáltatók</a></li>
         <li><a href="tuzved113.pdf" target="fooldal">Tûzvédelmi Házirend</a></li>
         <li><a href="hazirend.html">Házirend</a></li>
-        
+
         <li><a href="iparosok.html">Szakiparosok</a></li>
         <li><a href="fizkkolts.html">Közös költség</a></li>
         <li><a href="onkorm.html">Önkormányzat elérhetõsége</a></li>
         <li><a href="hataroz.html">Határozatok</a></li>
         <li><a href="vizora.html">Vízóra állás leadás</a></li>
-        <li><a href="ttorveny2011.html">Társasházi törvény</a></li>    
+        <li><a href="ttorveny2011.html">Társasházi törvény</a></li>
 		<li><a href="adatv113.html">Adatvédelmi tájékoztató</a></li>
         <li><a href="adatszab113.html">Adatvédelmi szabályzat</a></li>
 
 				</ul>
- 			</li>	
+ 			</li>
 		</ul><br>
- <td align="left"> 
+ <td align="left">
 
     <td width="100%" valign="middle" bgcolor="#000000" align="left" bordercolor="#be9a7c"><script type="text/javascript">
 var d = new Date();
@@ -421,4 +416,3 @@ document.write("<\/b><\/font><\/td>");
     </div>
  </body>
 </html>
-
