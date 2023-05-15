@@ -1,12 +1,13 @@
 <?php
-header('Content-Type: text/html; charset=utf-8');
+header('Content-Type: text/html; charset=iso-8859-2');
 
 $message = 'Internal error: jelezzen az oldal adminisztrátorának a hibáról';
+$is_success = false;
 
 function post_captcha($user_response) {
     $fields_string = '';
     $fields = array(
-        'secret' => '6LfTtPAlAAAAANAorUfVgyaBDGvk8S18QMydmXA6',
+        'secret' => '6Ldy8BAmAAAAAJp3NHJ9NLn5WhEiS9a8z5HBSXJs',
         'response' => $user_response
     );
 
@@ -33,8 +34,8 @@ if (!$res['success']) {
     $message = 'Az email sikeres kiküldéséhez lépjen vissza és próbálja meg újra kitölteni a mezőket.';
 } else {
 
-    if (isset($_POST['neved']) && preg_match("/^([\w\s\.\-äÄáÁéÉíÍóÓöÖőŐúÚüÜűŰ]){1,40}$/", $_POST['neved']) &&
-        isset($_POST['email']) && preg_match("/^([\w\s\.\-äÄáÁéÉíÍóÓöÖőŐúÚüÜűŰ0-90!#\$%&'\*\+\/=\?\^_`\{\|\}~@]){1,40}$/", $_POST['email']) &&
+    if (isset($_POST['neved']) && preg_match("/^.{1,40}$/", $_POST['neved']) &&
+        isset($_POST['email']) && preg_match("/^.{1,40}$/", $_POST['email']) &&
         isset($_POST['haz']) && preg_match("/^[\w\/]{1,4}$/", $_POST['haz']) &&
         isset($_POST['emelet']) && preg_match("/^[\w]{1,4}$/", $_POST['emelet']) &&
         isset($_POST['ajto']) && preg_match("/^[0-9]{1,3}$/", $_POST['ajto']) &&
@@ -57,13 +58,23 @@ if (!$res['success']) {
         mail ($kuldo_email, 'Vízóra állás visszaigazolás', "Név: $kuldo_neve\r\nEmail: $kuldo_email \r\nHázszám: $kuldo_haz Emelet: $kuldo_emelet Ajtó: $kuldo_ajto \r\nHideg vízóra gyári szám: $kuldo_gyhideg \r\nHideg vízóra állás: $kuldo_hideg \r\nMeleg vízóra gyári szám: $kuldo_gymeleg \r\nMeleg vízóra állás: $kuldo_meleg  \n" . date('Y/m/d H:i:s'), "FROM: $send_to_email ");
 
         $message = 'Vízóra állás visszaigazolást a megadott e-mail címre megküldtük...';
+		$is_success = true;
 
     } else {
         $message = 'Nem megengedett karakterek szerepelnek egy vagy több mezőben.';
     }
 }
 
-echo '<br><br><br><br><br><br><br><br><br><br><br><br>
+if ($is_success == true) {
+
+    echo '<br><br><br><br><br><br><br><br><br><br><br><br>
    <p style="font:italic 12 verdana;text-align:center">
-   <a href="vizora.html">' . $message .'<br><br>Vissza</a></p>'
+   <a href="vizora.html">' . $message .'<br><br>Vissza</a></p>';
+
+} else {
+
+    echo '<br><br><br><br><br><br><br><br><br><br><br><br>
+   <p style="font:italic 12 verdana;text-align:center">
+   <a href="vizora.html" style="color: red; font-weight:bold; font-size: 20px;">' . $message .'<br><br>Vissza</a></p>';
+}
 ?>
