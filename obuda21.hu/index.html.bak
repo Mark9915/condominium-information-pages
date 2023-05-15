@@ -1,71 +1,76 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-	
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-<meta name="Description" content="Information architecture, Web Design, Web Standards." />
-<meta name="Keywords" content="your, keywords" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
-<meta name="Distribution" content="Global" />
-<meta name="Robots" content="index,follow" />
-
-<link rel="stylesheet" href="images/Techmania.css" type="text/css" />
-
-<title>Az Óbuda 22. sz. Lakásfenntartó Szövetkezet</title>
-	
+<title>Óbuda21</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
-<!-- wrap starts here -->	
-<div id="wrap">
+     <div id="header">
+<h1> Óbuda 21 sz. Lakásfenntartó Szövetkezet  
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Budapest, 1036 Lajos utca 105 - 111</h1>
+     </div>
+     <div id="content">
+	    <div id="colOne">
+		   <div class="post">
+			<h2 class="title"> </h2>
+			<div class="story">
+			 <h2>Üdvözöljük Honlapunkon! </h2><br> 
+ <br><br> 
 
-		<div id="header">
-		
-			<h1 id="logo-text">Óbuda 22 sz.<span class="cyan">&nbsp;Lakásfenntartó Szövetkezet</span></h1>			
-			<h2 id="slogan">Budapest, 1036 Lajos utca 123-131</h2>	
-								 						
+ <!--<h2 style="color:red;"align=center>Tisztelt Tulajdonosok! </h2>
+			<h1 style="color:red;"align=left> A honlapon keresztül a levelezés és a vízóraleadási rendszer nem működik, ezért kérjük önöket, 
+			hogy a társasház email címére legyenek szívesek elküldeni a vízmérőállásokat és a hozzátartozó gyártási számokat vagy papíralapon leadni a közös képviselői postaládába. </h1>
+
+			<h1 style="color:red;"align=center> A társasház email címe:<span style="color: #0000a0"> obuda21@gmail.com </span></h1>  -->
+
+<br>
+               	  <p align="center"><img width=460 height=270 src="haz.JPG"><br><br> 
+                  <p align="center"><img width=460 height=270 src="haz1.jpg">	
+			</div>
+ 
 		</div>
-	  
-	  <!-- content-wrap starts here -->
-	  <div id="content-wrap">
-	  
-	  		<div id="main"> 
-	
-				<a name="TemplateInfo"></a>
-				<h1>Üdvözöljük Honlapunkon !</h1>
-		 <br><br>  
-	  <p align="center"><img width=500 height=300 src="kep.jpg"><br><br> 
-                  <p align="center"><img width=500 height=300 src="kep1.jpg">	<br>
-                                                                                                                                                                              
-<br><br></p></font>
-				<br />		
-								
-	  		</div> 	
-			  
-	  		<div id="sidebar">
-					
-				<h1>  Menű</h1>				
-				<ul class="sidemenu">
-					<li><a href="fogad22.html">Elérhetőség</a></li>
-					<li><a href="alapsz22.html">Alapszabály</a></li>
-					<li><a href="hazi22.html">Házirend</a></li>
-                    <li><a href="tuzved_22.pdf" target="fooldal">Tűzvédelmi házirend</a></li>
-                    <li><a href="tuzszab_22.pdf" target="fooldal">Tűzriadó terv</a></li>
-                    <li><a href="szovazonos22.html">Szövetkezet azonosítói</a></li>
-					<li><a href="hatarozat.html">Közgyülési határozatok</a></li> 
-   				    <li><a href="kozte22.html">Közérdekú telefonszámok</a></li>
-					<li><a href="orvos22.html">Orvosi rendelés</a></li>
-					<li><a href="szaki22.html">Szakiparosok</a></li>	
-					<li><a href="biztosit22.html">Házbiztosítás</a></li>
-					<li><a href="onkorm22.html">Önkormányzat elérhetősége</a></li>				 
-					<li><a href="level22.html">Levelezés</a></li>
-					<li><a href="archiv22.html">Archívum</a></li>
+    		<div class="post"> 
+			<h2 class="title"> </h2>
+	 
+			<div class="story">
+ 
+			</div> 
+ 
+		</div>
+	</div>
+
+	<div id="colTwo">
+		<ul>		
+			<li>
+				<h2>Menű</h2>
+				<ul>
+      <li><a href="fooldal.html">Fogadó óra</a></li>
+      <li><a href="alapszab.html">Alapszabály</a></li>
+      <li><a href="hazirend.html">Házirend</a></li>
+      <li><a href="tuzved21.pdf" target="fooldal">Tűzvédelmi Házirend</a></li>
+      <li><a href="fizetendo_2011.html">Fizetendő közös költség</a></li>
+        
+      <li><a href="biztosit_21.html">Házbiztosítás</a></li>    
+      <li><a href="szolgaz21.html">Szolgáltató azonosítók</a></li>
+      <li><a href="szovazon21.html">Szövetkezet azonosítói</a></li>
+      <li><a href="koztel.html">Közérdekű telefonszámok</a></li>
+      <li><a href="vallalkoz21.html">Vállalkozók</a></li>
+      <li><a href="onkorm.html">Önkormányzat elérhetősége</a></li>
+      <li><a href="hataroz.html">Határozatok gyüjteménye</a></li>
+      <li><a href="tajek.html">Archívum</a></li>	  
+      <li><a href="panasz.html">Ötlet és panaszláda </a></li>
+      <li><a href="vizora1.html">Vízóra állás leadása </a></li>
+      <li><a href="email1.html" >Levél küldés </a></li>    
+	  <li><a href="adatv21.html">Adatvédelmi tájékoztató</a></li>
+      <li><a href="adatszab21.html">Adatvédelmi szabályzat</a></li>
 				</ul>
-			 	
-		
-		 
-		</div>
-		<td align="center"> 
+ 			</li>	
+		</ul><br>
+
+ <td align="left"> 
 
     <td width="100%" valign="middle" bgcolor="#000000" align="left" bordercolor="#be9a7c"><script type="text/javascript">
 var d = new Date();
@@ -174,25 +179,14 @@ document.write("<\/b><\/font><\/td>");
 </script>
 </td>
 </tr>
-<!--</tbody>
+</tbody>
 </table>
 	</div>
 	<div style="clear: both;">&nbsp;</div>
-    </div> -->
-		<div id="footer">
-		
-			<span id="footer-left">
-				 
-			</span>		
-			
-			<span id="footer-right">
-				  
-			</span>
-			
-		</div>	
+    </div>
 
-<!-- wrap ends here -->		
-</div>	
-</body>
+    <div id="footer">
+	<p> &nbsp;</p>
+    </div>
+ </body>
 </html>
- 
