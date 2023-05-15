@@ -59,7 +59,7 @@
 
 			<h1 style="color:red;"align=center> A társasház email címe:<span style="color: #0000a0"> obuda23@gmail.com </span>
 
-			<!--
+			
  <br><br><form method="post" action="mail.php"> 
 		<table align="center"> 
 		  <tr>
@@ -81,7 +81,7 @@
      </form>
 	 <p align=center> 
 	 Az ide írt üzenete az <font size="2" color="#ff0000">obuda23@gmail.com </font>címre érkezik</p> 
-	 -->
+	 
 	 <br> <br><br>
 
 <p align=center>
