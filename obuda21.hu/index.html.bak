@@ -9,7 +9,7 @@
 </head>
 <body>
      <div id="header">
-<h1> Óbuda 21 sz. Lakásfenntartó Szövetkezet  
+<h1> Óbuda 21 sz. Lakásfenntartó Szövetkezet
                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Budapest, 1036 Lajos utca 105 - 111</h1>
      </div>
      <div id="content">
@@ -17,33 +17,29 @@
 		   <div class="post">
 			<h2 class="title"> </h2>
 			<div class="story">
-			 <h2>Üdvözöljük Honlapunkon! </h2><br> 
- <br><br> 
-
- <!--<h2 style="color:red;"align=center>Tisztelt Tulajdonosok! </h2>
-			<h1 style="color:red;"align=left> A honlapon keresztül a levelezés és a vízóraleadási rendszer nem mûködik, ezért kérjük önöket, 
-			hogy a társasház email címére legyenek szívesek elküldeni a vízmérõállásokat és a hozzátartozó gyártási számokat vagy papíralapon leadni a közös képviselõi postaládába. </h1>
-
-			<h1 style="color:red;"align=center> A társasház email címe:<span style="color: #0000a0"> obuda21@gmail.com </span></h1>  -->
+			 <h2>Üdvözöljük Honlapunkon! </h2><br>
+ <br><br>
 
 <br>
-               	  <p align="center"><img width=460 height=270 src="haz.JPG"><br><br> 
-                  <p align="center"><img width=460 height=270 src="haz1.jpg">	
+<br>
+<br>
+               	  <p align="center"><img width=460 height=270 src="haz.JPG"><br><br>
+                  <p align="center"><img width=460 height=270 src="haz1.jpg">
 			</div>
- 
+
 		</div>
-    		<div class="post"> 
+    		<div class="post">
 			<h2 class="title"> </h2>
-	 
+
 			<div class="story">
- 
-			</div> 
- 
+
+			</div>
+
 		</div>
 	</div>
 
 	<div id="colTwo">
-		<ul>		
+		<ul>
 			<li>
 				<h2>Menû</h2>
 				<ul>
@@ -52,25 +48,25 @@
       <li><a href="hazirend.html">Házirend</a></li>
       <li><a href="tuzved21.pdf" target="fooldal">Tûzvédelmi Házirend</a></li>
       <li><a href="fizetendo_2011.html">Fizetendõ közös költség</a></li>
-        
-      <li><a href="biztosit_21.html">Házbiztosítás</a></li>    
+
+      <li><a href="biztosit_21.html">Házbiztosítás</a></li>
       <li><a href="szolgaz21.html">Szolgáltató azonosítók</a></li>
       <li><a href="szovazon21.html">Szövetkezet azonosítói</a></li>
       <li><a href="koztel.html">Közérdekû telefonszámok</a></li>
       <li><a href="vallalkoz21.html">Vállalkozók</a></li>
       <li><a href="onkorm.html">Önkormányzat elérhetõsége</a></li>
       <li><a href="hataroz.html">Határozatok gyüjteménye</a></li>
-      <li><a href="tajek.html">Archívum</a></li>	  
+      <li><a href="tajek.html">Archívum</a></li>
       <li><a href="panasz.html">Ötlet és panaszláda </a></li>
-      <li><a href="vizora1.html">Vízóra állás leadása </a></li>
-      <li><a href="email1.html" >Levél küldés </a></li>    
+      <li><a href="vizora.html">Vízóra állás leadása </a></li>
+      <li><a href="email1.html" >Levél küldés </a></li>
 	  <li><a href="adatv21.html">Adatvédelmi tájékoztató</a></li>
       <li><a href="adatszab21.html">Adatvédelmi szabályzat</a></li>
 				</ul>
- 			</li>	
+ 			</li>
 		</ul><br>
 
- <td align="left"> 
+ <td align="left">
 
     <td width="100%" valign="middle" bgcolor="#000000" align="left" bordercolor="#be9a7c"><script type="text/javascript">
 var d = new Date();
