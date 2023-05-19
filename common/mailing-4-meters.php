@@ -77,7 +77,7 @@ if ($is_success == true) {
 
     echo '<br><br><br><br><br><br><br><br><br><br><br><br>
    <p style="font:italic 12 verdana;text-align:center">
-   <a href="vizora.html">' . $message .'<br><br>Vissza</a></p>';
+   <a href="vizpark.html">' . $message .'<br><br>Vissza</a></p>';
 
 } else {
 
