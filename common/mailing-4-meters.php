@@ -41,12 +41,12 @@ if (!$res['success']) {
         isset($_POST['ajto'])     && preg_match("/^[0-9]{1,3}$/", $_POST['ajto']) &&
         isset($_POST['gyhideg'])  && preg_match("/^[\w]{1,20}$/", $_POST['gyhideg']) &&
         isset($_POST['hideg'])    && preg_match("/^[0-9]{1,20}$/", $_POST['hideg']) &&
-        isset($_POST['mashideg']) && preg_match("/^[\w]{1,20}$/", $_POST['mashideg']) &&
-        isset($_POST['allhideg']) && preg_match("/^[0-9]{1,20}$/", $_POST['allhideg']) &&
+        isset($_POST['mashideg']) && preg_match("/^[\w]{0,20}$/", $_POST['mashideg']) &&
+        isset($_POST['allhideg']) && preg_match("/^[0-9]{0,20}$/", $_POST['allhideg']) &&
         isset($_POST['gymeleg'])  && preg_match("/^[\w]{1,20}$/", $_POST['gymeleg']) &&
         isset($_POST['meleg'])    && preg_match("/^[0-9]{1,20}$/", $_POST['meleg']) &&
-        isset($_POST['masmeleg']) && preg_match("/^[\w]{1,20}$/", $_POST['masmeleg']) &&
-        isset($_POST['allmeleg']) && preg_match("/^[0-9]{1,20}$/", $_POST['allmeleg'])) {
+        isset($_POST['masmeleg']) && preg_match("/^[\w]{0,20}$/", $_POST['masmeleg']) &&
+        isset($_POST['allmeleg']) && preg_match("/^[0-9]{0,20}$/", $_POST['allmeleg'])) {
         $kuldo_neve = $_POST['neved'];
 		$kuldo_email = $_POST['email'];
 		$kuldo_haz = $_POST['haz'];
@@ -63,7 +63,7 @@ if (!$res['success']) {
 
 		mail ($send_to_email, 'Vízóra állás leadás', "Név: $kuldo_neve\r\nEmail: $kuldo_email \r\nHázszám: $kuldo_haz Emelet: $kuldo_emelet Ajtó: $kuldo_ajto \r\nHideg vízóra 1 gyári szám: $kuldo_gyhideg \r\nHideg vízóra 1 állás: $kuldo_hideg \r\nHideg vízóra 2 gyári szám: $kuldo_mashideg \r\nHideg vízóra 2 állás: $kuldo_allhideg\r\nMeleg vízóra  1 gyári szám: $kuldo_gymeleg \r\nMeleg vízóra 1 állás: $kuldo_meleg  r\nMeleg vízóra 2 gyári szám: $kuldo_masmeleg \r\nMeleg vízóra 2 állás: $kuldo_allmeleg  \n" . date('Y/m/d H:i:s'), "FROM: $kuldo_email ");
 
-		mail ($kuldo_email, 'Vízóra állás visszaigazolás', "Név: $kuldo_neve\r\nEmail: $kuldo_email \r\nHázszám: $kuldo_haz Emelet: $kuldo_emelet Ajtó: $kuldo_ajto \r\nHideg vízóra 1 gyári szám: $kuldo_gyhideg \r\nHideg vízóra 1 állás: $kuldo_hideg \r\nHideg vízóra 2 gyári szám: $kuldo_mashideg \r\nHideg vízóra 2 állás: $kuldo_allhideg\r\nMeleg vízóra  1 gyári szám: $kuldo_gymeleg \r\nMeleg vízóra 1 állás: $kuldo_meleg  r\nMeleg vízóra 2 gyári szám: $kuldo_masmeleg \r\nMeleg vízóra 2 állás: $kuldo_allmeleg  \n" . date('Y/m/d H:i:s'), "FROM: vizafogo1006@gmail.com ");
+		mail ($kuldo_email, 'Vízóra állás visszaigazolás', "Név: $kuldo_neve\r\nEmail: $kuldo_email \r\nHázszám: $kuldo_haz Emelet: $kuldo_emelet Ajtó: $kuldo_ajto \r\nHideg vízóra 1 gyári szám: $kuldo_gyhideg \r\nHideg vízóra 1 állás: $kuldo_hideg \r\nHideg vízóra 2 gyári szám: $kuldo_mashideg \r\nHideg vízóra 2 állás: $kuldo_allhideg\r\nMeleg vízóra  1 gyári szám: $kuldo_gymeleg \r\nMeleg vízóra 1 állás: $kuldo_meleg  r\nMeleg vízóra 2 gyári szám: $kuldo_masmeleg \r\nMeleg vízóra 2 állás: $kuldo_allmeleg  \n" . date('Y/m/d H:i:s'), "FROM: $send_to_email ");
 
         $message = 'Vízóra állás visszaigazolást a megadott e-mail címre megküldtük...';
 		$is_success = true;
@@ -77,7 +77,7 @@ if ($is_success == true) {
 
     echo '<br><br><br><br><br><br><br><br><br><br><br><br>
    <p style="font:italic 12 verdana;text-align:center">
-   <a href="vizora.html">' . $message .'<br><br>Vissza</a></p>';
+   <a href="vizpark.html">' . $message .'<br><br>Vissza</a></p>';
 
 } else {
 
