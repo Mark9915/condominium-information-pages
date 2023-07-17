@@ -57,8 +57,6 @@ if (!$res['success']) {
 
         mail ($kuldo_email, 'Vízóra állás visszaigazolás', "N\xE9v: $kuldo_neve\r\nEmail: $kuldo_email \r\nH\xE1zsz\xE1m: $kuldo_haz Emelet: $kuldo_emelet Ajt\xF3: $kuldo_ajto \r\nHideg v\xEDz\xF3ra gy\xE1ri sz\xE1m: $kuldo_gyhideg \r\nHideg v\xEDz\xF3ra \xE1ll\xE1s: $kuldo_hideg \r\nMeleg v\xEDz\xF3ra gy\xE1ri sz\xE1m: $kuldo_gymeleg \r\nMeleg v\xEDz\xF3ra \xE1ll\xE1s: $kuldo_meleg  \n" . date('Y/m/d H:i:s'), "FROM: $send_to_email ");
 
-        echo "N\xE9v: $kuldo_neve\r\nEmail: $kuldo_email \r\nH\xE1zsz\xE1m: $kuldo_haz Emelet: $kuldo_emelet Ajt\xF3: $kuldo_ajto \r\nHideg v\xEDz\xF3ra gy\xE1ri sz\xE1m: $kuldo_gyhideg \r\nHideg v\xEDz\xF3ra \xE1ll\xE1s: $kuldo_hideg \r\nMeleg v\xEDz\xF3ra gy\xE1ri sz\xE1m: $kuldo_gymeleg \r\nMeleg v\xEDz\xF3ra \xE1ll\xE1s: $kuldo_meleg  \n" . date('Y/m/d H:i:s');
-
         $message = 'Vízóra állás visszaigazolást a megadott e-mail címre megküldtük...';
 		$is_success = true;
 
