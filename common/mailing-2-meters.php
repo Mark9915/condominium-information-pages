@@ -53,9 +53,9 @@ if (!$res['success']) {
         $kuldo_gymeleg = $_POST['gymeleg'];
         $kuldo_meleg = $_POST['meleg'];
 
-        mail ($send_to_email, 'Vízóra állás leadás', "Név: $kuldo_neve\r\nEmail: $kuldo_email \r\nHázszám: $kuldo_haz Emelet: $kuldo_emelet Ajtó: $kuldo_ajto \r\nHideg vízóra gyári szám: $kuldo_gyhideg \r\nHideg vízóra állás: $kuldo_hideg \r\nMeleg vízóra gyári szám: $kuldo_gymeleg \r\nMeleg vízóra állás: $kuldo_meleg  \n" . date('Y/m/d H:i:s'), "FROM: $kuldo_email ");
+        mail ($send_to_email, 'Vízóra állás leadás', "N\xE9v: $kuldo_neve\r\nEmail: $kuldo_email \r\nH\xE1zsz\xE1m: $kuldo_haz Emelet: $kuldo_emelet Ajt\xF3: $kuldo_ajto \r\nHideg v\xEDz\xF3ra gy\xE1ri sz\xE1m: $kuldo_gyhideg \r\nHideg v\xEDz\xF3ra \xE1ll\xE1s: $kuldo_hideg \r\nMeleg v\xEDz\xF3ra gy\xE1ri sz\xE1m: $kuldo_gymeleg \r\nMeleg v\xEDz\xF3ra \xE1ll\xE1s: $kuldo_meleg  \n" . date('Y/m/d H:i:s'), "FROM: $kuldo_email ");
 
-        mail ($kuldo_email, 'Vízóra állás visszaigazolás', "Név: $kuldo_neve\r\nEmail: $kuldo_email \r\nHázszám: $kuldo_haz Emelet: $kuldo_emelet Ajtó: $kuldo_ajto \r\nHideg vízóra gyári szám: $kuldo_gyhideg \r\nHideg vízóra állás: $kuldo_hideg \r\nMeleg vízóra gyári szám: $kuldo_gymeleg \r\nMeleg vízóra állás: $kuldo_meleg  \n" . date('Y/m/d H:i:s'), "FROM: $send_to_email ");
+        mail ($kuldo_email, 'Vízóra állás visszaigazolás', "N\xE9v: $kuldo_neve\r\nEmail: $kuldo_email \r\nH\xE1zsz\xE1m: $kuldo_haz Emelet: $kuldo_emelet Ajt\xF3: $kuldo_ajto \r\nHideg v\xEDz\xF3ra gy\xE1ri sz\xE1m: $kuldo_gyhideg \r\nHideg v\xEDz\xF3ra \xE1ll\xE1s: $kuldo_hideg \r\nMeleg v\xEDz\xF3ra gy\xE1ri sz\xE1m: $kuldo_gymeleg \r\nMeleg v\xEDz\xF3ra \xE1ll\xE1s: $kuldo_meleg  \n" . date('Y/m/d H:i:s'), "FROM: $send_to_email ");
 
         $message = 'Vízóra állás visszaigazolást a megadott e-mail címre megküldtük...';
 		$is_success = true;
